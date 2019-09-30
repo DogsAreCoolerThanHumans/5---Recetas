@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/receta_image"
+        android:layout_width="114dp"
+        android:layout_height="159dp"
+        android:paddingTop="20dp"
+        android:src="@drawable/corgi1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/fragmenthome_showreceta_algunosingredientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="Algunos ingredientes:"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/fragmenthome_showreceta_fecha"
+        app:layout_constraintStart_toStartOf="@+id/ingrediente1"
+        app:layout_constraintTop_toBottomOf="@id/receta_image" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/fragmenthome_showreceta_fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="82dp"
+        android:paddingTop="15dp"
+        android:text="27/09/2019"
+        app:layout_constraintBottom_toTopOf="@+id/ingrediente3"
+        app:layout_constraintEnd_toEndOf="@+id/materialButton"
+        app:layout_constraintLeft_toRightOf="@id/fragmenthome_showreceta_algunosingredientes"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/receta_image" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/ingrediente1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="8dp"
+        android:paddingTop="10dp"
+        android:text="1 buebito"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragmenthome_showreceta_algunosingredientes" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/ingrediente2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="8dp"
+        android:paddingTop="10dp"
+        android:text="Chingos de catsun"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ingrediente1" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/ingrediente3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="8dp"
+        android:paddingTop="10dp"
+        android:text="Pos un plato we jaja"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ingrediente2" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/ingrediente4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="8dp"
+        android:paddingTop="10dp"
+        android:text="1/2 taza de obo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ingrediente3" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/ingrediente5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="8dp"
+        android:paddingTop="10dp"
+        android:text="El recibo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ingrediente4" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/ingrediente6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="No lo c, tú dime"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ingrediente5" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton"
+        android:layout_width="283dp"
+        android:layout_height="43dp"
+        android:text="Agregar a favoritos"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ingrediente6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
